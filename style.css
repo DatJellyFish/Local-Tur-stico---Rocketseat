@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+
+  --font-h1: bold 36px var(--font-family);
+  --font-h2: bold 32px var(--font-family);
+  --font-h3: bold 28px var(--font-family);
+  --font-headline: bold 16px var(--font-family);
+  --font-paragraph: 16px var(--font-family);
+  --font-subtitle: italic 16px var(--font-family);
+
+  --bg-default: #f5f4f0;
+  --bd-primary: #d9d9d9;
+
+  --text-primary: #1b1b1b;
+  --text-secondary: #333333;
+  --text-tertiary: #696969;
+  --text-headline: #e1624f;
+
+  --accent-blue: #0c51a7;
+  --accent-orange: #e95e10;
+  --accent-pink: #e5245e;
+  --accent-purple: #591b98;
+}
+
+body {
+  display: flex;
+  padding: 80px 80px 48px 80px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 65px;
+
+  background-color: var(--bg-default);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: 1120px;
+
+  .title-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    h1 {
+      font: var(--font-h1);
+      color: var(--text-primary);
+    }
+
+    p {
+      font: var(--font-headline);
+      color: var(--text-headline);
+      text-transform: uppercase;
+      letter-spacing: 0.48px;
+    }
+  }
+
+  .desc-img {
+    display: flex;
+    padding: 4px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+
+    img {
+      border-radius: 28px;
+      height: 660px;
+      align-self: stretch;
+    }
+
+    p {
+      align-self: stretch;
+      text-align: center;
+      font: var(--font-subtitle);
+      color: var(--text-secondary);
+    }
+  }
+}
+
+#content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  width: 1120px;
+
+  .divisor {
+    width: 1120px;
+    height: 1px;
+
+    background-color: var(--bd-primary);
+  }
+
+  .title-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+
+      p {
+        font: var(--font-headline);
+        color: var(--text-headline);
+        text-transform: uppercase;
+        letter-spacing: 0.48px;
+      }
+
+      h2 {
+        font: var(--font-h2);
+        color: var(--text-primary);
+      }
+    }
+
+    p {
+      align-self: stretch;
+      font: var(--font-paragraph);
+      color: var(--text-secondary);
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 48px;
+    align-self: stretch;
+
+    .card-travel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+
+      img {
+        height: 350px;
+        align-self: stretch;
+        border-radius: 28px;
+      }
+
+      figcaption {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+
+        h3 {
+          font: var(--font-h3);
+          color: var(--text-primary);
+        }
+
+        p {
+          align-self: stretch;
+          font: var(--font-paragraph);
+          color: var(--text-secondary);
+
+          strong {
+            font: var(--font-headline);
+            color: var(--text-secondary);
+
+            .hist {
+              font: var(--font-headline);
+              color: var(--accent-blue);
+            }
+
+            .family {
+              font: var(--font-headline);
+              color: var(--accent-pink);
+            }
+
+            .budget {
+              font: var(--font-headline);
+              color: var(--accent-orange);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.divisor {
+  width: 1120px;
+  height: 1px;
+
+  background-color: var(--bd-primary);
+}
+
+#last {
+  align-self: stretch;
+  text-align: center;
+  color: var(--text-secondary);
+  font: var(--font-paragraph);
+}
+
+#credits {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  p {
+    color: var(--text-secondary);
+    font-family: Alice;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
